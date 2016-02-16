@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "IQKeyboardManager.h"
+#import "IQKeyboardReturnKeyHandler.h"
 
 @interface Home : UIViewController
 

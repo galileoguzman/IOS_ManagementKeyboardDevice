@@ -14,9 +14,13 @@
 
 @implementation Home
 
+IQKeyboardReturnKeyHandler *returnKeyHandler;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    returnKeyHandler = [[IQKeyboardReturnKeyHandler alloc] initWithViewController:self];
 }
 
 - (void)didReceiveMemoryWarning {
