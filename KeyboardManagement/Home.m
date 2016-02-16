@@ -21,6 +21,9 @@ IQKeyboardReturnKeyHandler *returnKeyHandler;
     // Do any additional setup after loading the view, typically from a nib.
     
     returnKeyHandler = [[IQKeyboardReturnKeyHandler alloc] initWithViewController:self];
+    
+    [IQKeyboardManager sharedManager].toolbarDoneBarButtonItemText = @"Aceptar";
+    [IQKeyboardManager sharedManager].shouldShowTextFieldPlaceholder = NO;
 }
 
 - (void)didReceiveMemoryWarning {
