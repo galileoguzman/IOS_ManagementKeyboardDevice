@@ -26,6 +26,7 @@ IQKeyboardReturnKeyHandler *returnKeyHandler;
     // TOOLBAR PROPERTIES
     [IQKeyboardManager sharedManager].toolbarDoneBarButtonItemText = @"Aceptar";
     [IQKeyboardManager sharedManager].shouldShowTextFieldPlaceholder = NO;
+    [IQKeyboardManager sharedManager].shouldToolbarUsesTextFieldTintColor = YES;
     
     // RESIGN RESPONDER WHEN USER TOUCH OUTSIDE OF ANY TEXFIELD
     [IQKeyboardManager sharedManager].shouldResignOnTouchOutside = YES;
