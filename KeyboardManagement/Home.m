@@ -20,10 +20,15 @@ IQKeyboardReturnKeyHandler *returnKeyHandler;
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    // HANDLER FOR RETURN KEY
     returnKeyHandler = [[IQKeyboardReturnKeyHandler alloc] initWithViewController:self];
     
+    // TOOLBAR PROPERTIES
     [IQKeyboardManager sharedManager].toolbarDoneBarButtonItemText = @"Aceptar";
     [IQKeyboardManager sharedManager].shouldShowTextFieldPlaceholder = NO;
+    
+    // RESIGN RESPONDER WHEN USER TOUCH OUTSIDE OF ANY TEXFIELD
+    [IQKeyboardManager sharedManager].shouldResignOnTouchOutside = YES;
 }
 
 - (void)didReceiveMemoryWarning {
